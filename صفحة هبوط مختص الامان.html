@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مؤسسة مختص الأمان</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #baf7d0, #eaffd0);
+}
+
+/* تموجات */
+.wave {
+    position: fixed;
+    width: 200%;
+    height: 200%;
+    background: rgba(255,255,255,0.25);
+    border-radius: 45%;
+    animation: wave 15s infinite linear;
+}
+
+.wave:nth-child(2){
+    animation-duration: 20s;
+    opacity: 0.3;
+}
+
+@keyframes wave {
+    0% { transform: translateX(0) rotate(0deg); }
+    100% { transform: translateX(-50%) rotate(360deg); }
+}
+
+/* المحتوى */
+.container {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* العنوان */
+h1 {
+    font-size: 24px;
+    color: #1b5e20;
+    margin-bottom: 10px;
+}
+
+/* الوصف */
+.desc {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+/* الخدمات */
+.services {
+    font-size: 15px;
+    color: #2e7d32;
+    margin-bottom: 30px;
+}
+
+/* الأزرار */
+.btn {
+    display: block;
+    width: 90%;
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+/* زر الاتصال (أزرق فاقع) */
+.call {
+    background: #007BFF;
+    color: white;
+}
+
+.call:hover {
+    background: #0056cc;
+}
+
+/* زر واتساب */
+.whatsapp {
+    background: #25D366;
+    color: white;
+}
+
+.whatsapp:hover {
+    background: #1ebe5d;
+}
+
+/* ايقونة واتساب */
+.icon {
+    width: 20px;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+/* موبايل */
+@media (max-width: 600px) {
+    h1 { font-size: 20px; }
+    .desc { font-size: 14px; }
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="wave"></div>
+<div class="wave"></div>
+
+<div class="container">
+
+    <h1>مؤسسة مختص الأمان للمقاولات العامة</h1>
+
+    <div class="desc">
+        نوفر خدمات تمديد الغاز المركزي بالرياض بأعلى معايير السلامة والجودة.
+    </div>
+
+    <div class="services">
+        شركة تمديد غاز مركزي<br>
+        فني صيانة غاز<br>
+        تمديد غاز بالرياض
+    </div>
+
+    <a href="tel:0559524713" class="btn call">اتصال الآن</a>
+
+    <a href="https://wa.me/966559524713" class="btn whatsapp">
+        <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+        واتساب
+    </a>
+
+</div>
+
+</body>
+</html>
